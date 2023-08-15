@@ -1,0 +1,25 @@
+Create custom HTML tags
+Create custom class
+Lifecycle methods available
+
+
+
+Custom events lifecycle events
+
+1. constructor() - Called when an instance of the element is created or upgraded
+2. connectedCallback() - Called every time when the element is inserted in dom
+3. disconnectedCallback() - Called every time the element is removed from dom
+4. attributeChangedCallback(attributeName, oldValue, newValue) - Called when an attribute is added, removed, updated or replaced
+
+Shadow DOM 
+
+Used for self contained components
+Encapsulates style and markup
+Create with element.attachShadow({mode: open})
+Creates a shadowROot that we can reference and interact with
+
+HTML templates
+Define the encapsulated markup of our web components
+Template tag stores markup on Page
+Include both HTML and CSS in templates
+Use slot to add custom text
