@@ -47,8 +47,12 @@ class UserCard extends HTMLElement {
 		this.shadowRoot.querySelector("h3").innerText = this.getAttribute("name");
 		this.shadowRoot.querySelector("img").src = this.getAttribute("avatar");
 	}
-
-
+  
+	connectedCallback() {
+		this.shadowRoot
+			.querySelector("#toggle-info")
+			.addEventListener("click", () => this.toggleInfo());
+	}
 }
 
 window.customElements.define("user-card", UserCard);
